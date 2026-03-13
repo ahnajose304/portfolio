@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+.about{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+
+.container{
+display:flex;
+align-items:center;
+gap:50px;
+max-width:1000px;
+}
+
+.about-img img{
+width:250px;
+height:250px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.about-text{
+max-width:600px;
+}
+
+.about-text h1{
+margin-bottom:20px;
+}
+
+.about-text p{
+margin-bottom:15px;
+line-height:1.6;
+}
+
+
+/* ---------------- EDUCATION SECTION ---------------- */
+
+.education{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+background:white;
+}
+
+.edu-wrapper{
+display:flex;
+align-items:center;
+gap:60px;
+max-width:1100px;
+}
+
+.edu-title{
+min-width:200px;
+}
+
+.edu-title h1{
+font-size:32px;
+}
+
+/* Horizontal Cards */
+
+.edu-container{
+display:flex;
+gap:25px;
+}
+
+.edu-card{
+background:#f9f9f9;
+padding:25px;
+width:250px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+text-align:center;
+}
+
+.edu-card:hover{
+transform:translateY(-10px);
+}
+
+.edu-card h3{
+margin-bottom:10px;
+color:#333;
+}
+
+.edu-card p{
+color:#555;
+line-height:1.5;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ABOUT SECTION -->
+
+<section class="about">
+
+<div class="container">
+
+<div class="about-img">
+<img src="profile.jpeg" alt="Ahna Jose">
+</div>
+
+<div class="about-text">
+
+<h1>About Me</h1>
+
+<p>Hello! I'm <b>Ahna Jose</b>, a passionate student interested in
+design and technology. I am currently pursuing my Integrated MCA at
+Depaul Institute of Science and Technology, Angamaly.</p>
+
+<p>I am currently studying computer applications and developing
+skills in HTML, CSS, JavaScript, and graphic design tools.
+My goal is to become a professional designer and developer.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EDUCATION SECTION -->
+
+<section class="education">
+
+<div class="edu-wrapper">
+
+<div class="edu-title">
+<h1>Education</h1>
+</div>
+
+<div class="edu-container">
+
+<div class="edu-card">
+<h3>Integrated MCA</h3>
+<p>Depaul Institute of Science and Technology<br>Angamaly</p>
+<p>2022 – 2027</p>
+</div>
+
+<div class="edu-card">
+<h3>Higher Secondary</h3>
+<p>St. Francis H.S.S For Girls, Aluva</p>
+<p>2020 – 2022</p>
+</div>
+
+<div class="edu-card">
+<h3>High School</h3>
+<p>St. Francis H.S.S</p>
+<p>2019 – 2020</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>

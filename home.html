@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHNA JOSE | PORTFOLIO</title>
+</head>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* Navigation */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+align-items:center;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.profile-img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #00f2ff;
+box-shadow:0 0 25px #00f2ff;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+/* Hero */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero span{
+color:#00f2ff;
+}
+
+.hero p{
+margin:20px 0;
+}
+
+.hero button{
+padding:12px 30px;
+border:none;
+border-radius:25px;
+background:#00f2ff;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* About */
+
+.about{
+padding:80px 10%;
+text-align:center;
+}
+
+.about-card{
+margin-top:30px;
+background:rgba(255,255,255,0.1);
+padding:30px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+}
+
+/* Skills */
+
+.skills{
+padding:80px 10%;
+text-align:center;
+}
+
+.skill-container{
+margin-top:40px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+background:rgba(255,255,255,0.15);
+padding:20px 40px;
+margin:10px;
+border-radius:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.1);
+background:#00f2ff;
+color:black;
+}
+
+/* Contact */
+
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+.contact button{
+padding:12px 25px;
+border:none;
+background:#00f2ff;
+border-radius:20px;
+cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+<body>
+<!-- Navigation -->
+<nav>
+<h2 class="logo">AJ</h2>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero Section -->
+<!-- Hero Section -->
+
+<section id="home" class="hero">
+
+<div class="hero-container">
+
+<!-- Profile Image -->
+<img src="ahna.jpeg" alt="Ahna Jose" class="profile-img">
+
+<div class="hero-text">
+
+<h1>Hello, I'm <span>Ahna Jose</span></h1>
+
+<h2>Graphic & Creative Designer</h2>
+
+<p>
+Creative student passionate about graphic design, visual creativity,
+and modern digital technologies. I enjoy designing clean visuals
+and learning new tools to improve my creative skills.
+</p>
+
+<button onclick="scrollToSection()">Explore More</button>
+
+</div>
+
+</div>
+
+</section>
+</section>
+
+<!-- About -->
+
+<section id="about" class="about">
+
+<h2>About Me</h2>
+
+<div class="about-card">
+
+<p>
+I am a passionate student interested in graphic design and creative technologies.
+I enjoy designing modern visuals and learning new tools to improve my creativity
+and technical skills.
+</p>
+
+</div>
+</section>
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="contact">
+
+<h2>Contact Me</h2>
+
+<button onclick="contactMessage()">Say Hello</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 Ahna Jose Portfolio</p>
+
+</footer>
+
+<script>
+ //Contact message
+function contactMessage(){
+
+alert("Thanks for visiting my portfolio!");
+
+}
+</script>
+</body>
+</html>
+</body>
+</html>
