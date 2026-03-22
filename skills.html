@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>skills</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
+
 <style>
-    nav{
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+nav{
 display:flex;
 justify-content:space-between;
 padding:20px 10%;
 align-items:center;
+background:#020617;
 }
 
 nav ul{
@@ -24,105 +39,132 @@ margin-left:25px;
 nav ul li a{
 text-decoration:none;
 color:white;
-font-weight:500;
-}
-.hero-container{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:60px;
-flex-wrap:wrap;
-body{
-font-family: Arial, Helvetica, sans-serif;
-background:#f4f4f4;
 }
 
-.skills-section{
-width:80%;
+/* COMMON WRAPPER */
+.wrapper{
+max-width:1000px;
 margin:auto;
-padding:40px;
+width:100%;
+}
+
+/* SKILLS SECTION */
+.skills-section{
+padding:60px 20px;
 }
 
 .skills-section h2{
 text-align:center;
-margin-bottom:30px;
+margin-bottom:40px;
 }
 
+/* CONTAINER */
 .skills-container{
 display:flex;
-justify-content:space-around;
+justify-content:center;
+gap:30px;
 flex-wrap:wrap;
 }
 
+/* SKILL BOX */
 .skill-box{
 background:white;
-padding:20px;
-width:250px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+padding:25px;
+width:280px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+color:#000;
+transition:0.3s;
+}
+
+.skill-box:hover{
+transform:translateY(-8px);
 }
 
 .skill-box h3{
 margin-bottom:15px;
-color:#333;
 }
+
 .skill-item{
 margin-bottom:15px;
 }
 
 .skill-item h4{
 margin-bottom:5px;
-color:#333;
 }
 
 .skill-item p{
 font-size:14px;
 color:#555;
 }
-.skill-box ul{
-list-style:none;
-padding:0;
-}
 
-.skill-box ul li{
-padding:6px 0;
-border-bottom:1px solid #eee;
+@media(max-width:768px){
+.skills-container{
+flex-direction:column;
+align-items:center;
+}
 }
 </style>
 </head>
+
 <body>
-    <section class="skills-section">
+
+<nav>
+<h2 class="logo"></h2>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section class="skills-section">
+<div class="wrapper">
+
 <h2>My Skills</h2>
 
 <div class="skills-container">
+
 <div class="skill-box">
 <h3>Personal Skills</h3>
+
 <div class="skill-item">
 <h4>Creativity</h4>
-<p>Ability to design visually appealing layouts and create innovative webpage designs.</p>
+<p>Ability to design visually appealing layouts and create innovative designs.</p>
 </div>
+
 <div class="skill-item">
 <h4>Time Management</h4>
-<p>Ability to complete web design tasks efficiently within deadlines.</p>
+<p>Ability to complete tasks efficiently within deadlines.</p>
 </div>
+
 </div>
 
 <div class="skill-box">
 <h3>Programming Skills</h3>
+
 <div class="skill-item">
 <h4>HTML</h4>
-<p>Ability to design visually appealing layouts and create innovative webpage designs.</p>
+<p>Ability to structure web pages.</p>
 </div>
+
 <div class="skill-item">
 <h4>CSS</h4>
-<p>Ability to style the webpages.</p>
+<p>Ability to style web pages.</p>
 </div>
+
 <div class="skill-item">
 <h4>SQL</h4>
-<p>Ability to store data in a Database</p>
+<p>Ability to manage and store data.</p>
 </div>
+
 </div>
+
+</div>
+
 </div>
 </section>
+
 </body>
 </html>
